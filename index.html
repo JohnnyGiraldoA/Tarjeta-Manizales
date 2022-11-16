@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <title>Grupo Galileo</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <form id="FormGenerarTarjeta">
+          <div class="form-group text-center">
+            <label for="Name">Hola:</label>
+            <input required type="text" class="form-control" id="Name" aria-describedby="Tu nombre">
+          </div>
+          <div class="form-group text-center">
+            <label for="Aprendizaje">Tu correo institucional es:</label>
+            <textarea required id="Aprendizaje" cols="30" rows="1" class="form-control"
+              aria-describedby="Cosas que aprendiste del cumpleañero"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success" id="Generar">Generar</button>
+        </form>
+      </div>
+      <div class="col-sm-12 col-lg-7">
+        <div class="card text-center">
+          <div class="card-header">
+            Estamos felices de qie visites a manizales 🎉
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <img src="images/manizales.jpg" alt="Foto Bienvenidos a Manizales">
+              <h5 class="card-title">
+                🎉 Bienvenidos a la Mejor Ciudad de Colombia ! Manizales ¡
+              </h5>
+              <p> Hola: <br> <span id=Student> </span> <br>
+                <hr> Manizales es denominada la "Ciudad de las Puertas Abiertas". También se le conoce como "Manizales
+                del Alma" debido a un pasodoble taurino que lleva su
+                nombre,:https://www.tripadvisor.co/Attractions-g652402-Activities-Manizales_Caldas_Department.html/ <br>
+                <br> Gracias por visitar a Manizales, <br> Visita el Nevado del Ruiz 
+                <br>
+                <img src="data:image/jpeg;base64,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" alt="">
+              </p>
+              <p class="card-text" id="Aprendido">...</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            Bienvenido a mi Manizales del Alma
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/scripts.js"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
